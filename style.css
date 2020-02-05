@@ -153,7 +153,7 @@ a.top-link:after {
   top: 42px;
   display: flex;
   flex-direction: row;
-  flex: 1 6 1;
+  flex: 1 13 1;
   justify-content: stretch;
 }
 
@@ -162,25 +162,30 @@ a.top-link:after {
 }
 
 .main {
-  flex: 6;
+  flex: 13;
 }
 
 .right {
+  position: fixed;
+  top: 0;
+  padding-top: 42px;
+  right: 0;
   flex: 1;
   border-left: 1px solid rgba(0, 0, 0, .2);
   box-shadow: 1px 0 0 #f0f0f2 inset;
-  height: 100%;
+  height: 100vh;
+  width: 205px;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  padding: 4px;
+  align-content: stretch;
+  font-size: 12px;
+  color: #333333;
 }
 
 .left-sidebar-header {
   font-size: 11px;
   overflow: hidden;
   font-weight: bold;
-  text-shadow: 0 1px #ffffff;
   text-transform: uppercase;
 }
 
@@ -188,8 +193,11 @@ a.top-link:after {
   font-size: 10px;
   color: #4a4a4a;
   font-weight: bold;
-  text-shadow: 0 1px #fff;
   text-transform: uppercase;
+}
+
+.text-shadow-white-1 {
+  text-shadow: 0 1px #fff;
 }
 
 .sidebar-header {
@@ -211,14 +219,14 @@ a.top-link:after {
   background-size: auto;
   background-position: -15px -162px;
   width: 12px;
+  height: 12px;
 }
 
 .previous:hover {
   background-image: url(./img/right-sidebar-icons.png);
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: -15px -162px;
-  width: 12px;
+  background-position: -15px -149px;
 }
 
 .forward {
@@ -227,6 +235,14 @@ a.top-link:after {
   background-size: auto;
   background-position: -17px -397px;
   width: 12px;
+  height: 12px;
+}
+
+.forward:hover {
+  background-image: url(./img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -379px;
 }
 
 .game {
@@ -241,19 +257,66 @@ a.top-link:after {
   box-shadow: 0px 0px 5px 0px #2792FF;
 }
 
+.pages-contacts {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-area-wrap {
+  margin-right: -30px;
+  padding-right: 30px;
+}
+
+.page {
+  height: 44px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page:hover {
+  background-color: #dddfe2;
+  box-shadow: 1px 0 0 #eaebed inset;
+  text-decoration: none;
+}
+
+.page-img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.page-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-member-name {
+  font-size: 12px;
+}
+
+.page-notification {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 2px;
+  color: #4b4f56;
+  padding: 0 2px;
+  font-size: 11px;
+}
+
 .chat-search-bar {
   background-color: #fbfbfb;
   /* border-top: 1px solid #bdc7d8; */
   border-radius: 6px 6px 0 0;
   height: 30px;
-  width: 104%;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 0 0 10px;
-  position: relative;
-  left: -4px;
-  bottom: -4px;
+  /* position: fixed; */
 }
 
 .chat-input-search-label::before {
@@ -272,6 +335,7 @@ a.top-link:after {
   border: none;
   outline: none;
   height: 100%;
+  width: 50%;
   margin-left: 10px;
   background-color: #fbfbfb;
   font-size: 12px;
@@ -284,7 +348,7 @@ a.top-link:after {
   background-size: auto;
   background-position: 0 -685px;
   content: '';
-  padding: 0 0 0 16px;
+  padding: 0 0 4px 16px;
 }
 
 .new-message::before {
@@ -293,7 +357,7 @@ a.top-link:after {
   background-size: auto;
   background-position: 0 -413px;
   content: '';
-  padding: 0 0 0 16px;
+  padding: 0 0 4px 16px;
 }
 
 .new-group::before {
@@ -302,7 +366,44 @@ a.top-link:after {
   background-size: auto;
   background-position: 0 -515px;
   content: '';
-  padding: 0 0 0 16px;
+  padding: 0 0 4px 16px;
+}
+
+
+.pages-contacts:hover {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.pages-contacts:hover::-webkit-scrollbar {
+  width: 8px; 
+  border-radius: 10px;
+}
+
+.pages-contacts:hover::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius: 10px;
+}
+
+.pages-contacts:hover::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  border-radius: 10px;
+}
+
+.pages-contacts:hover::-webkit-scrollbar-track:hover {
+  background: #ddd; 
+  border-radius: 10px;
+}
+
+.pages-contacts::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.online-notification {
+  background-color: limegreen;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
 }
 
 .p-6 {
@@ -407,4 +508,17 @@ a.top-link:after {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.opa-5 {
+  opacity: .5;
+}
+
+.short-hr {
+  width: 90%;
+  margin: auto;
 }
