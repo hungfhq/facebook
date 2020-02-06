@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-    <title>Facebook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/right-sidebar.css">
+    <link rel="stylesheet" href="css/space.css">
+    <link rel="stylesheet" href="css/left-col.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Facebook (layout practice)</title>
   </head>
 
   <body>
-    <header>
+    <header class="mb-10">
       <div class="left"></div>
       <div class="middle">
         <a href="#"><span class="logo"></span></a>
@@ -25,7 +30,7 @@
         </div>
 
         <div class="links">
-          <div class="ml-30"><a class="avatar top-link hover pt-8 pb-8" href="#">
+          <div class="ml-35"><a class="avatar top-link hover pt-8 pb-8" href="#">
               John
             </a></div>
           <div><a class="top-link hover pl-12 pt-8 pb-8" href="#">Home</a></div>
@@ -45,13 +50,102 @@
     </header>
 
     <div class="container">
-      <div class="left">left</div>
-      <div class="main">main</div>
+      <div class="left">
+        <!-- this area intentionally left blank -->
+      </div>
+      <div class="main pt-10">
+        <div class="left-col">
+          <ul class="left-nav">
+            <li class="with-extra-button mb-10">
+              <p class="avatar">John Doe</p>
+              <button class="extra-button"></button>
+            </li>
+            <li class="with-extra-button">
+              <p class="news-feed">News Feed</p>
+              <button class="extra-button"></button>
+            </li>
+            <li>
+              <p class="messenger">Messenger</p>
+            </li>
+            <li>
+              <p class="watch">Watch</p>
+              <span class="red-notification mr-8"></span>
+            </li>
+            <li>
+              <p class="marketplace">Marketplace</p>
+            </li>
+            <p class="explore mt-10 mb-10">Explore</p>
+            <li>
+              <p class="pages">Pages</p>
+            </li>
+            <a class="see-more" href="#">See more...</a>
+          </ul>
+        </div>
+        <div class="empty-col"></div>
+        <!-- main content -->
+        <div class="main-col ml-10">
+          <div class="box">
+            <div class="create-post-header p-8">
+              <p class="text-bold">Create post</p>
+            </div>
+            <div class="create-post-area p-10">
+              <img class="create-post-img mr-8" src="./img/game.png">
+              <input type="text" class="create-post-input" placeholder="What's on your mind, John?">
+            </div>
+            <div class="attachment-selector-area">
+              <ul class="attachment-selector-list">
+                <li>
+                  <span class="photo-video">&nbsp;</span>
+                  <p class="overflow-ellipsis">Photo/Video</p>
+                </li>
+                <li>
+                  <span class="tag-friend">&nbsp;</span>
+                  <p class="overflow-ellipsis">Tag friends</p>
+                </li>
+                <li>
+                  <span class="feeling">&nbsp;</span>
+                  <p class="overflow-ellipsis">Feeling/Activity</p>
+                </li>
+                <li>
+                  <span class="more"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box mt-10 p-10">
+            <div class="stories-header mb-10">
+              <p class="text-bold">Stories</p>
+              <a href="#">See all</a>
+            </div>
+
+            <div class="stories-area">
+              <div class="story story-1">
+                <img class="story-avatar" src="./img/avatar.jpg">
+                <p class="text-bold text-white">John Doe</p>
+              </div>
+              <div class="story">
+                <img class="story-avatar" src="./img/avatar.jpg">
+              </div>
+              <div class="story">
+                <img class="story-avatar" src="./img/avatar.jpg">
+              </div>
+              <div class="story">
+                <img class="story-avatar" src="./img/avatar.jpg">
+              </div>
+            </div>
+          </div>
+        </div> <!-- end main content -->
+        <div class="right-col">
+
+        </div>
+      </div>
+
       <div class="right">
         <div class="instant-games p-6">
           <div class="sidebar-header mb-10">
-            <p class="left-sidebar-header text-shadow-white-1">Instant games</p>
-            <p class="left-sidebar-more text-shadow-white-1">More</p>
+            <p class="right-sidebar-header text-shadow-white-1">Instant games</p>
+            <p class="right-sidebar-more text-shadow-white-1">More</p>
           </div>
           <div class="games mb-10">
             <a class="previous" href="#">&nbsp;</a>
@@ -75,8 +169,8 @@
 
         <div class="your-games p-6">
           <div class="sidebar-header mb-10">
-            <p class="left-sidebar-header text-shadow-white-1">Your games</p>
-            <p class="left-sidebar-more text-shadow-white-1">More</p>
+            <p class="right-sidebar-header text-shadow-white-1">Your games</p>
+            <p class="right-sidebar-more text-shadow-white-1">More</p>
           </div>
           <div class="games mb-10">
             <a class="previous" href="#">&nbsp;</a>
@@ -102,7 +196,7 @@
         <div class="pages-contacts mb-10">
           <div class="pages">
             <div class="sidebar-header mb-10">
-              <p class="left-sidebar-header pl-10">Your pages</p>
+              <p class="right-sidebar-header pl-10">Your pages</p>
             </div>
 
             <div class="page p-8">
@@ -120,7 +214,7 @@
 
           <div class="contacts">
             <div class="sidebar-header mb-10 mt-10">
-              <p class="left-sidebar-header pl-10">Contacts</p>
+              <p class="right-sidebar-header pl-10">Contacts</p>
             </div>
 
             <div class="page p-8">
@@ -132,7 +226,7 @@
 
           <div class="group">
             <div class="sidebar-header mb-10 mt-10">
-              <p class="left-sidebar-header pl-10">Group Conversations</p>
+              <p class="right-sidebar-header pl-10">Group Conversations</p>
             </div>
 
             <div class="page p-8">
@@ -156,7 +250,7 @@
 
           <div class="more-contacts">
             <div class="sidebar-header mb-10 mt-10">
-              <p class="left-sidebar-header pl-10">More contacts (20)</p>
+              <p class="right-sidebar-header pl-10">More contacts (20)</p>
             </div>
 
             <div class="page p-8">

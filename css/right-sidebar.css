@@ -1,0 +1,229 @@
+.right-sidebar-header {
+  font-size: 11px;
+  overflow: hidden;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.right-sidebar-more {
+  font-size: 10px;
+  color: #4a4a4a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-shadow-white-1 {
+  text-shadow: 0 1px #fff;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previous {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -15px -162px;
+  width: 12px;
+  height: 12px;
+}
+
+.previous:hover {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -15px -149px;
+}
+
+.forward {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -397px;
+  width: 12px;
+  height: 12px;
+}
+
+.forward:hover {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -379px;
+}
+
+.game {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.game:hover {
+  box-shadow: 0px 0px 5px 0px #2792FF;
+}
+
+.pages-contacts {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-area-wrap {
+  margin-right: -30px;
+  padding-right: 30px;
+}
+
+.page {
+  height: 44px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page:hover {
+  background-color: #dddfe2;
+  box-shadow: 1px 0 0 #eaebed inset;
+  text-decoration: none;
+}
+
+.page-img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.page-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-member-name {
+  font-size: 12px;
+}
+
+.page-notification {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 2px;
+  color: #4b4f56;
+  padding: 0 2px;
+  font-size: 11px;
+}
+
+.chat-search-bar {
+  background-color: #fbfbfb;
+  border-radius: 6px 6px 0 0;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 0 10px;
+}
+
+.chat-input-search-label::before {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -937px;
+  content: '';
+  display: inline-block;
+  height: 12px;
+  padding: 0 0 0 0;
+  width: 12px;
+}
+
+.chat-input-search {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 50%;
+  margin-left: 10px;
+  background-color: #fbfbfb;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.options::before {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -685px;
+  content: '';
+  padding: 0 0 4px 16px;
+}
+
+.new-message::before {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -413px;
+  content: '';
+  padding: 0 0 4px 16px;
+}
+
+.new-group::before {
+  background-image: url(../img/right-sidebar-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -515px;
+  content: '';
+  padding: 0 0 4px 16px;
+}
+
+.pages-contacts:hover {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.pages-contacts:hover::-webkit-scrollbar {
+  width: 8px; 
+  border-radius: 10px;
+}
+
+.pages-contacts:hover::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius: 10px;
+}
+
+.pages-contacts:hover::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  border-radius: 10px;
+}
+
+.pages-contacts:hover::-webkit-scrollbar-track:hover {
+  background: #ddd; 
+  border-radius: 10px;
+}
+
+.pages-contacts::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.online-notification {
+  background-color: limegreen;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+
+.opa-5 {
+  opacity: .5;
+}
+
+.short-hr {
+  width: 90%;
+  margin: auto;
+}
