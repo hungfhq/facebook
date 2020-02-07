@@ -5,7 +5,7 @@ header {
   background-color: #4166B2;
   display: flex;
   flex-direction: row;
-  z-index: 1;
+  z-index: 2;
 }
 
 .left { 

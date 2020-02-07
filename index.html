@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/right-sidebar.css">
     <link rel="stylesheet" href="css/space.css">
     <link rel="stylesheet" href="css/left-col.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-col.css">
+    <link rel="stylesheet" href="css/right-col.css">
     <title>Facebook (layout practice)</title>
   </head>
 
@@ -81,7 +82,6 @@
             <a class="see-more" href="#">See more...</a>
           </ul>
         </div>
-        <div class="empty-col"></div>
         <!-- main content -->
         <div class="main-col ml-10">
           <div class="box">
@@ -120,9 +120,11 @@
             </div>
 
             <div class="stories-area">
-              <div class="story story-1">
+              <div class="story">
                 <img class="story-avatar" src="./img/avatar.jpg">
                 <p class="text-bold text-white">John Doe</p>
+                <div class="story-background">
+                </div>
               </div>
               <div class="story">
                 <img class="story-avatar" src="./img/avatar.jpg">
@@ -135,10 +137,191 @@
               </div>
             </div>
           </div>
-        </div> <!-- end main content -->
-        <div class="right-col">
 
-        </div>
+          <div class="box mt-10">
+            <div class="article-header p-10">
+              <div class="article-author">
+                <img src="./img/redsvn-avatar.jpg" class="author-avatar mr-8">
+                <div class="d-flex flex-column">
+                  <a href="#" class="author hover-underline text-bold">Redsvn</a>
+                  <div class="d-flex flex-row">
+                    <a href="#" class="hover-underline ml-2">1hr</a>
+                    <span>.</span>
+                    <span class="privacy"></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="article-extra-button"></button>
+              </div>
+            </div>
+            <p class="p-10 text-14">
+              Alexander Đại đế, Thành Cát Tư Hãn, Napoléon Bonaparte, Tướng Võ Nguyên Giáp… là bốn trong những vị tướng
+              tài giỏi có biệt tài quân sự đỉnh cao trong lịch sử.
+            </p>
+            <div class="overlay-container">
+              <img class="article-img mb-6" src="./img/alexander_the_great.jpeg">
+              <div class="p-10">
+                <p class="text-uppercase">redsvn.net</p>
+                <p class="text-bold text-15">
+                  Biệt tài dụng quân của những vị tướng giỏi nhất mọi thời đại - Redsvn.net
+                </p>
+              </div>
+              <div class="overlay">
+              </div>
+            </div>
+            <div class="color-gray p-10 d-flex flex-row align-items-center justify-content-space-between">
+              <div class="d-flex flex-row align-items-center">
+                <button class="like-button"></button>
+                <button class="angry-button ml-negative-4 mr-8"></button>
+                <p>352</p>
+              </div>
+              <p>5 comments 65 shares</p>
+            </div>
+            <div class="color-gray text-bold pl-10 pr-10">
+              <div class="border-top pl-10 pr-10 p-4">
+                <ul class="actions-area">
+                  <li>
+                    <span class="like-action-icon"></span>
+                    <p class="pl-10 pr-10 text-14">Like</p>
+                  </li>
+                  <li>
+                    <span class="comment-action-icon"></span>
+                    <p class="pl-10 pr-10 text-14">Comment</p>
+                  </li>
+                  <li>
+                    <span class="share-action-icon"></span>
+                    <p class="pl-10 pr-10 text-14">Share</p>
+                  </li>
+                  <li>
+                    <a class="avatar"></a> <span class="expand-icon"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="box mt-10">
+            <div class="article-header p-10">
+              <div class="article-author">
+                <img src="./img/redsvn-avatar.jpg" class="author-avatar mr-8">
+                <div class="d-flex flex-column">
+                  <a href="#" class="author hover-underline text-bold">Redsvn</a>
+                  <div class="d-flex flex-row">
+                    <a href="#" class="hover-underline ml-2">1hr</a>
+                    <span>.</span>
+                    <span class="privacy"></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="article-extra-button"></button>
+              </div>
+            </div>
+            <p class="p-10 text-14">
+              This is another article
+            </p>
+            <div class="overlay-container">
+              <img class="article-img mb-6" src="./img/alexander_the_great.jpeg">
+              <div class="p-10">
+                <p class="text-uppercase">redsvn.net</p>
+                <p class="text-bold text-15">
+                  This is another article
+                </p>
+              </div>
+              <div class="overlay">
+              </div>
+            </div>
+            <div class="color-gray p-10 d-flex flex-row align-items-center justify-content-space-between">
+              <div class="d-flex flex-row align-items-center">
+                <button class="like-button"></button>
+                <button class="angry-button ml-negative-4 mr-8"></button>
+                <p>352</p>
+              </div>
+              <p>5 comments 65 shares</p>
+            </div>
+            <div class="color-gray text-bold pl-10 pr-10">
+              <div class="border-top pl-10 pr-10 p-4">
+                <ul class="actions-area">
+                  <li>
+                    <span class="like-action-icon"></span>
+                    <p class="pl-10 pr-10 text-14">Like</p>
+                  </li>
+                  <li>
+                    <span class="comment-action-icon"></span>
+                    <p class="pl-10 pr-10 text-14">Comment</p>
+                  </li>
+                  <li>
+                    <span class="share-action-icon"></span>
+                    <p class="pl-10 pr-10 text-14">Share</p>
+                  </li>
+                  <li>
+                    <a class="avatar"></a> <span class="expand-icon"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- end main content -->
+
+        <div class="right-col ml-10">
+          <div class="box-310 p-6">
+            <div class="hover-color">
+              <div class="p-4 d-flex flex-row align-items-center">
+                <span class="birthday-present-icon mr-8"></span>
+                <a class="mr-8 text-bold" href="#">Jane Doe</a> and <a class="ml-10" href="#">1 other</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-310 mt-10 text-gray">
+            <div class="p-10 d-flex flex-row align-items-center justify-content-space-between">
+              <a href="#" class="d-flex flex-row align-items-center text-gray">
+                <p class="text-bold text-gray-important">Your pages (2)</p>
+                <span class="expand-icon ml-8"></span>
+              </a>
+              <button class="article-extra-button"></button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-10 d-flex flex-row align-items-center">
+              <img class="mr-4" src="./img/page-avatar.jpg">
+              <div class="ml-8 d-flex flex-column justify-content-flex-start">
+                <a href="#" class="text-bold text-14 mb-8">anonymous page</a>
+                <p class="mb-8 d-flex flex-row align-items-flex-end justify-content-flex-start">
+                  <span class="messages-icon mr-4"></span>
+                  Messages</p>
+                <p class="mb-8 d-flex flex-row align-items-flex-end justify-content-flex-start">
+                  <span class="notifications-icon mr-4"></span>
+                  Notifications<span class="page-notification ml-6">1</span>
+                </p>
+              </div>
+
+            </div>
+            <div class="p-10">
+              <div class="p-10 border-top border-bottom">
+                <ul class="page-actions">
+                  <li>
+                    <span class="page-icons publish-icon mb-6"></span>
+                    Public
+                  </li>
+                  <li>
+                    <span class="page-icons photo-icon mb-6"></span>
+                    Photo
+                  </li>
+                  <li>
+                    <span class="page-icons live-icon mb-6"></span>
+                    Live
+                  </li>
+                  <li>
+                    <span class="page-icons invite-icon mb-6"></span>
+                    Invite
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end right column -->
       </div>
 
       <div class="right">
@@ -297,8 +480,6 @@
 
           </div>
         </div>
-
-        <div></div>
 
         <div class="chat-search-bar">
           <label class="chat-input-search-label"></label>
