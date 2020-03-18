@@ -1,0 +1,118 @@
+ul.left-nav {
+  list-style-type: none;
+}
+
+ul.left-nav li {
+  align-items: center;
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.extra-button {
+  display: none;
+  background-color: #F5F6F7;
+  background-image: url(../img/p26uIqZ9WWV.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -22px -602px;
+  height: 10px;
+  width: 20px;
+  border: none;
+  outline: none;
+}
+
+ul.left-nav li.with-extra-button:hover .extra-button {
+  display: block;
+}
+
+ul.left-nav li:hover {
+  background-color: #F5F6F7;
+  box-shadow: 0 0 1px 0 #cccccc;
+}
+
+p.news-feed::before {
+  content: '';
+  background-image: url(../img/p26uIqZ9WWV.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -21px -324px;
+  margin-right:10px;
+  padding: 3px 10px;
+}
+
+p.messenger::before {
+  content: '';
+  background-image: url(../img/p26uIqZ9WWV.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -42px -135px;
+  margin-right:10px;
+  padding: 3px 10px;
+}
+
+p.watch::before {
+  content: '';
+  background-image: url(../img/p26uIqZ9WWV.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -471px;
+  margin-right:10px;
+  padding: 3px 10px;
+}
+
+span.red-notification {
+  background-color: #fa3e3e;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+p.marketplace::before {
+  content: '';
+  background-image: url(../img/p26uIqZ9WWV.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -324px;
+  margin-right:10px;
+  padding: 3px 10px;
+}
+
+p.explore {
+  font-size:13px;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+
+p.pages::before {
+  content: '';
+  background-image: url(../img/p26uIqZ9WWV.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -156px;
+  margin-right:10px;
+  padding: 3px 10px;
+}
+
+.see-more::before {
+  background-image: url(../img/p26uIqZ9WWV.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -936px;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  margin: 4px 8px 0 2px;
+  vertical-align: bottom;
+  width: 16px;
+}
+
+a.see-more {
+  color: #385898;
+}
+
+a.see-more:hover {
+  text-decoration: underline;
+}

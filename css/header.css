@@ -1,0 +1,129 @@
+header {
+  width: 100%;
+  position: fixed;
+  height: 42px;
+  background-color: #4166B2;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.left { 
+  width: 100px;
+}
+
+.middle { 
+  width: 1014px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 2px 12px 3px 12px;
+  background-image: url(../img/big-icons.png);
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-right: 6px;
+}
+
+.search-area {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 10px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  width: 446px;
+}
+
+.seach-input {
+  border:none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-button {
+  background-color: #F5F6F7;
+  border: none;
+  padding: 0 16px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  height: 23px;
+  width: 48px;
+}
+
+.search-icon {
+  padding: 2px 14px;
+  background-image: url(../img/small-icons.png);
+  background-position: 0 -969px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.links {
+  display: flex;
+  align-items: center; 
+}
+
+a.top-link {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 18px;
+}
+
+a.top-link:after {
+  content: "";
+  padding-right: 10px;
+  border-right: 1px solid rgb(19, 49, 121, .6);
+}
+
+.avatar:before {
+  content: "";
+  padding: 4px 12px; 
+  background-image: url(../img/avatar1.jpg);
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .1);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.friend-requests {
+  background-image: url(../img/small-icons.png);
+  background-position: 0 -788px;
+}
+
+.messages {
+  background-image: url(../img/small-icons.png);
+  background-position: 0 -838px;
+}
+
+.notifications {
+  background-image: url(../img/small-icons.png);
+  background-position: 0 -738px;
+}
+
+.quick-help {
+  background-image: url(../img/big-icons.png);
+  background-position: 0 -100px;
+}
+
+.expand {
+  background-image: url(../img/big-icons.png);
+  background-position: 0 -50px;
+}
